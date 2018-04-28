@@ -1,0 +1,6 @@
+The syntax of profile .csv files is as follows:
+The file name is what is called in the start
+script, and as such it should be easy to remember.
+The rows in column A of the file are the factset
+IDs of each company/security that will be analyzed.
+Nothing other than the values in column A will be read.

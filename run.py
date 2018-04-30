@@ -1,11 +1,11 @@
 import os,sys
 
-prefix = "profiles_"
-ext = ".csv"
+try:
+	profile = raw_input("Profile name: ")
+except NameError:
+	#this is done in case the user is running 3.6
+	profile = input("Profile name: ")
 
-profile = raw_input("Profile name: ")
-
-fullfile = prefix + profile + ext
-
-with open(fullfile, "w"):
+with open("profile-log.txt", "a") as f:
+	f.write(profile + "\n")
 	os.system("start excel.exe model-master.xlsm")

@@ -8,4 +8,5 @@ except NameError:
 
 with open("profile-log.txt", "a") as f:
 	f.write(profile + "\n")
+	print(sys.path[0])
 	os.system("start excel.exe model-master.xlsm")
